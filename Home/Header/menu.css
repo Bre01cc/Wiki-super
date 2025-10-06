@@ -12,13 +12,24 @@ nav li {
 }
 nav li a {
   font-size: 1.4rem;
-
   color: white;
   text-decoration: none;
-  transition: 1s;
+  position: relative;
+  
 }
-nav li a:hover {
-  color: red;
+nav li a::after {
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+nav li a:hover::after {
+  width: 100%;
+  background-color: aliceblue;
 }
 .dropdown:hover .dropdown-menu {
   opacity: 1;
