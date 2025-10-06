@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="Body.css">
     <link rel="stylesheet" href="Header/header.css">
     <link rel="stylesheet" href="Header/menu.css">
+    <link rel="stylesheet" href="Conteudo/carrossel.css">
+    <link rel="stylesheet" href="Body/Body.css">
+    <link rel="stylesheet" href="./Conteudo/principal.css">
+    <script src="./slideshow.js" defer type="module"></script>
     <title>SuperStatus</title>
 </head>
 
@@ -31,10 +35,10 @@
         </div>
         <div class="user">
             <a href="#">
-                <i class="fas fa-sign-out-alt icone" style="color: #ffffff;"></i>
+                <i class="fas fa-sign-out-alt icone"></i>
             </a>
             <a href="#">
-                <i class="fas fa-user-circle icone" style="color: #f9fafa;"></i>
+                <i class="fas fa-user-circle icone"></i>
             </a>
 
         </div>
@@ -70,7 +74,7 @@
             <li class="dropdown">
                 <a href="#">Raça</a>
                 <i class="fas fa-chevron-down seta"></i>
-                 <div class="dropdown-menu">
+                <div class="dropdown-menu">
                     <a href="#">Raça</a>
                     <a href="#">Raça</a>
                     <a href="#">Raça</a>
@@ -81,7 +85,7 @@
             <li class="dropdown">
                 <a href="#">Status Ranking</a>
                 <i class="fas fa-chevron-down seta"></i>
-                 <div class="dropdown-menu">
+                <div class="dropdown-menu">
                     <a href="#">Raça</a>
                     <a href="#">Raça</a>
                     <a href="#">Raça</a>
@@ -90,6 +94,28 @@
         </ul>
 
     </nav>
+    <div class="carrossel">
+        <div class="galeria" id="galeria">
+            <!-- <img src="" alt=""> -->
+            <div class="action-button" id="previous">&laquo</div>
+            <div class="container-items" id="container-items"></div>
+            <div class="action-button" id="next">&raquo</div>
+        </div>
+    </div>
+    <div class="secao">
+        <div class="marvel">
+            <img src="/Img/Logo-marvel.png" alt="">
+            <P>
+                A Marvel é uma das maiores editoras e produtoras de histórias em quadrinhos e filmes do mundo, criada em
+                1939 nos EUA. Seu universo é formado por heróis, vilões e equipes que vivem aventuras interligadas,
+                misturando ação, drama e fantasia.
+            </P>
+        </div>
+        <div class="dc">
+            <div class="card"></div>
+        </div>
+    </div>
+    <div class="secao-herois"></div>
     <footer></footer>
 </body>
 
