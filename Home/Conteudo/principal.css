@@ -1,51 +1,167 @@
 .secao {
-    margin-top: 5vh;
-    padding-inline: 10vh;
-    width: 100%;
-    height: 500px;
-    gap: 20vw;
-    display: flex;
-    flex-direction: row;
+  margin-block: 5vh;
+  padding-inline: 10vh;
+  width: 100%;
+  height: auto;
+  gap: 20vw;
+  display: flex;
+  flex-direction: row;
 }
 
 .marvel {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-    padding-top: 10px;
-    width: 40%;
-    height: 100%;
-    background-color: #F42B2B90;
+  /* box-shadow: 0 1px 20px 2px black; */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-inline: 30px;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding-top: 10px;
+  width: 40%;
+  height: 100%;
+  text-align: left;
+  background-color: #f42b2b90;
+  padding-block: 4vh;
 }
-
+.inicio {
+  height: auto;
+  width: 100%;
+  /* background-color: black; */
+  /* position: relative; */
+}
+.inicio p {
+  color: white;
+  font-size: 1.3rem;
+}
+.restante {
+  display: none;
+  /* position: absolute;
+  left: -150%; */
+  /* background-color: white; */
+  color: red;
+  height: auto;
+  width: 100%;
+}
+.marvel .info-marvel {
+  border: none;
+  background-color: transparent;
+  /* opacity: 0; */
+  cursor: pointer;
+  font-size: 2rem;
+  transition: 0.5s ease-in-out;
+}
+.info-marvel .seta:hover {
+  padding-block: 7px;
+  padding-inline: 10px;
+  border-radius: 85%;
+  color: red;
+  background-color: white;
+}
+.seta {
+  transition: all 1s;
+  transform: 0;
+}
 .marvel img {
-    width: 500px;
-    height: auto;
-
+  width: 400px;
+  height: auto;
+}
+.Marvel-button {
+  height: 10%;
+  width: auto;
+  background-color: #f60b0b;
+  color: white;
+  font-size: 1.4rem;
+  border: none;
+  padding-inline: 50px;
+  padding-block: 10px;
+  margin-left: 50%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 1s;
+}
+.Marvel-button:hover {
+  color: #000000;
 }
 
+.Marvel-button .seta {
+  margin-top: 5px;
+  font-size: 25px;
+}
 .dc {
-    border-radius: 10px;
-    width: 40%;
-    height: 100%;
-    background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-inline: 24px;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding-top: 10px;
+  width: 40%;
+  height: 100%;
+  padding-block: 3vh;
+  text-align: left;
+  background-color: #4784f490;
+}
+.DC-button p {
+  color: white;
+  font-size: 1.4rem;
+}
+.dc .DC-info {
+  border: none;
+  background-color: transparent;
+  /* opacity: 0; */
+  font-size: 2rem;
+  transition: 0.5s ease-in-out;
+}
+.dc .seta:hover {
+  padding-block: 7px;
+  padding-inline: 10px;
+  border-radius: 85%;
+  color: red;
+  background-color: white;
+}
+.dc img {
+  width: 200px;
+  height: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
+.DC-button {
+  height: 10%;
+  width: auto;
+  background-color: #2386d2;
+  border: none;
+  padding-inline: 50px;
+  padding-block: 10px;
+  margin-left: 50%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 1s;
+}
+.inicioDC {
+  height: auto;
+  width: 100%;
+  color: white;
+  font-size: 1.3rem;
+}
+.DCrestante {
+  display: none;
+  height: auto;
+  width: 100%;
+}
+.DC-button .seta {
+  margin-top: 5px;
+  font-size: 25px;
+}
 .secao-herois {
-    margin-top: 10vh;
-    height: auto;
+  margin-top: 10vh;
+  height: auto;
 }
-
-footer {}

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/Home/Body/Body.css">
+    <link rel="stylesheet" href="/Home/Conteudo/carrossel.css">
+    <link rel="stylesheet" href="/Home/Conteudo/heroi.css">
+    <link rel="stylesheet" href="Home/Conteudo/carrossel.css">
+    <link rel="stylesheet" href="/Home/Conteudo/principal.css">
+    <link rel="stylesheet" href="/Home/Header/header.css">
+    <link rel="stylesheet" href="/Home/Header/menu.css">
+    <link rel="stylesheet" href="/Home/Footer/footer.css">
+    <script type="module" src="/Home/Conteudo/app.js"></script>
+    <script src="./Home/slideshow.js" defer type="module"></script>
+    <title>SuperStatus</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/Img/logo.png" alt="">
+            <h1>SuperStatus</h1>
+        </div>
+        <div class="pesquisa">
+            <div class="input-box">
+                <input type="text" id="caixa-texto">
+                <i class="fa-solid fa-magnifying-glass icon"></i>
+            </div>
+            <!-- <button id="buscar">Buscar</button> -->
+        </div>
+        <div class="user">
+            <a href="#">
+                <i class="fas fa-sign-out-alt icone"></i>
+            </a>
+            <a href="#">
+                <i class="fas fa-user-circle icone"></i>
+            </a>
+
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#">Marvel</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#">DC</a>
+            </li>
+        </ul>
+        <ul>
+            <li class="dropdown">
+                <a href="#">Grupo</a>
+                <i class="fas fa-chevron-down seta"></i>
+                <div class="dropdown-menu">
+                    <a href="#">Raça</a>
+                    <a href="#">Raça</a>
+                    <a href="#">Raça</a>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li class="dropdown">
+                <a href="#">Raça</a>
+                <i class="fas fa-chevron-down seta"></i>
+                <div class="dropdown-menu">
+                    <a href="#">Raça</a>
+                    <a href="#">Raça</a>
+                    <a href="#">Raça</a>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li class="dropdown">
+                <a href="#">Status Ranking</a>
+                <i class="fas fa-chevron-down seta"></i>
+                <div class="dropdown-menu">
+                    <a href="#">Raça</a>
+                    <a href="#">Raça</a>
+                    <a href="#">Raça</a>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+    <div class="carrossel">
+        <div class="galeria" id="galeria">
+            <!-- <img src="" alt=""> -->
+            <div class="action-button" id="previous">&laquo</div>
+            <div class="container-items" id="container-items"></div>
+            <div class="action-button" id="next">&raquo</div>
+        </div>
+    </div>
+    <div class="secao" id="principal">
+        <div class="marvel">
+            <img src="/Img/Logo-marvel.png" alt="">
+            <div class="inicio">
+                <p> A história da Marvel começa em 1939, quando Martin Goodman fundou a editora Timely Publications.
+                    Nessa época, os quadrinhos de super-heróis estavam em alta, e logo surgiram personagens como o Tocha
+                    Humana original e Namor, o Príncipe Submarino.
+                <div class="restante" id="restante">
+                    <p>
+                        Em 1941, foi criado o Capitão América, um herói
+                        patriótico que lutava contra os nazistas durante a Segunda Guerra Mundial, tornando-se um dos
+                        personagens mais populares daquele período.
+
+                        Após a guerra, o interesse por super-heróis diminuiu, e a editora passou a se chamar Atlas
+                        Comics,
+                        publicando outros tipos de histórias. No entanto, foi nos anos 1960 que a empresa, agora
+                        conhecida
+                        como Marvel Comics, ganhou força novamente sob o comando de Stan Lee, junto com artistas como
+                        Jack
+                        Kirby e Steve Ditko. Essa fase ficou conhecida como a Era de Ouro da Marvel, marcada pela
+                        criação de
+                        heróis complexos e humanos, que enfrentavam não apenas vilões, mas também problemas pessoais.
+
+
+                        Foi nesse período que nasceram os grandes ícones da editora: Homem-Aranha, Quarteto Fantástico,
+                        Hulk, Thor, Homem de Ferro, Pantera Negra, Doutor Estranho, X-Men e os Vingadores. Diferente dos
+                        heróis perfeitos de outras editoras, os personagens da Marvel tinham falhas, dúvidas e
+                        dificuldades,
+                        o que fez com que o público se identificasse com eles.
+
+                        Durante as décadas de 1970 a 1990, a Marvel continuou expandindo seu universo com histórias
+                        marcantes, como
+                        A Saga da Fênix Negra (dos X-Men) e Guerras Secretas.Mesmo assim, a empresa enfrentou
+                        dificuldades
+                        financeiras nos anos 1990, chegando perto da falência. Para se recuperar, vendeu os direitos de
+                        vários
+                        personagens para outros estúdios de cinema, como a Sony (Homem-Aranha) e a Fox (X-Men e Quarteto
+                        Fantástico).
+
+                        O grande renascimento da marca veio em 2008, com o lançamento do filme Homem de Ferro, estrelado
+                        por Robert
+                        Downey Jr.. Esse filme marcou o início do Universo Cinematográfico da Marvel (MCU), um conjunto
+                        de filmes
+                        interligados que contavam uma grande história em várias fases. O sucesso foi enorme, levando à
+                        criação de
+                        franquias como Os Vingadores, Guardiões da Galáxia, Pantera Negra e Doutor Estranho.
+
+                        A saga principal do MCU culminou com Vingadores: Guerra Infinita (2018) e Vingadores: Ultimato
+                        (2019),
+                        encerrando o ciclo de vários heróis clássicos e abrindo espaço para uma nova geração. Desde
+                        então, a Marvel
+                        tem explorado o conceito de multiverso, trazendo versões alternativas de personagens e
+                        introduzindo novos
+                        heróis em séries e filmes, como Capitã Marvel, Shang-Chi, Ms. Marvel e Os Eternos.
+
+                        Hoje, a Marvel é uma das marcas mais influentes do mundo, com histórias que atravessam gerações
+                        — unindo
+                        quadrinhos, filmes, séries e jogos — e mostrando que, mesmo os heróis mais poderosos, ainda são
+                        humanos por
+                        dentro.</p>
+                </div>
+            </div>
+            <a href="./pesquisa/pesquisa.html">
+                <button class="info-marvel" id="info-marvel">
+
+                    <i class="fas fa-chevron-down seta" id="info-seta"></i>
+                </button>
+                <button class="Marvel-button">
+                    <p>Heroes</p>
+                    <i class="fa-solid fa-arrow-right seta"></i>
+                </button>
+            </a>
+
+
+        </div>
+        <div class="dc">
+            <img src="/Img/DC_Comics_2024.webp" alt="">
+            <div class="inicioDC">
+                <p> A DC Comics foi fundada em 1934 como National Allied Publications por Malcolm Wheeler-Nicholson. Em
+                    1938, a
+                    editora lançou Superman, criado por Jerry Siegel e Joe Shuster, considerado o primeiro super-herói
+                    moderno.
+                </p>
+                <div class="DCrestante" id="DCrestante">
+                    <p></p>
+                    Seu enorme sucesso abriu caminho para a criação dde outros ícones como Batman (1939)
+                    Mulher-Maravilha
+                    (1941), Flash, Lanterna Verde e Aquaman. Esses personagens ajudaram a definir a chamada Era de Ouro
+                    dos
+                    quadrinhos, marcada por histórias de heroísmo e aventuras patrióticas durante a Segunda Guerra
+                    Mundial.
+
+                    Nos anos 1950 e 1960, durante a Era de Prata, a DC renovou seus heróis e introduziu novas
+                    versões de
+                    personagens clássicos, além de expandir seu universo com equipes como a Liga da Justiça da
+                    América.
+                    Essa
+                    fase trouxe histórias mais científicas e criativas, com maior foco em ficção científica e
+                    exploração
+                    de
+                    mundos paralelos.
+
+                    Durante as décadas seguintes, a DC enfrentou altos e baixos, mas manteve sua posição como uma
+                    das
+                    maiores
+                    editoras de quadrinhos. Nos anos 1980, reformulou sua linha com sagas marcantes como Crise nas
+                    Infinitas
+                    Terras, Batman: O Cavaleiro das Trevas e Watchmen, criando narrativas mais sombrias e complexas.
+
+                    No cinema, a DC começou com adaptações nos anos 1970 e 1980, mas foi a partir de 2005 e do
+                    lançamento de
+                    filmes como Batman Begins que ganhou destaque. Mais recentemente, a DC criou seu Universo
+                    Estendido
+                    da DC
+                    (DCEU) com filmes como Homem de Aço, Mulher-Maravilha, Aquaman e Liga da Justiça. Diferente da
+                    Marvel, o
+                    DCEU inicialmente teve menos integração entre filmes, mas está se expandindo com séries e novos
+                    personagens.
+
+                    Hoje, a DC continua sendo uma referência em quadrinhos e cultura pop, famosa por seus heróis
+                    icônicos e
+                    histórias que exploram heroísmo, justiça e dilemas humanos, muitas vezes de forma mais sombria e
+                    madura do
+                    que a Marvel.
+                    </p>
+
+                </div>
+            </div>
+            <button class="DC-info" id="DC-info">
+                <i class="fas fa-chevron-down seta"></i>
+            </button>
+
+            <button class="DC-button">
+                <p>Heroes</p>
+                <i class="fa-solid fa-arrow-right seta" id="DC-seta"></i>
+            </button>
+        </div>
+    </div>
+    <div class="secao-heroi" id="secao-spider">
+        <h2>Com grandes poderes vêm grandes responsabilidades. O herói que nunca desiste de lutar por Nova York!
+        </h2>
+        <div class="heroi">
+            <img src="./Img/620-spider-man.jpg" alt="">
+            <div class="dados">
+                <div class="infos">
+
+                    <h3>Name: Peter Parker</h3>
+
+                    <section class="alter-egos">
+                        <h3>Alter Egos:</h3>
+                        <p>Nenhum outro alter ego encontrado</p>
+                    </section>
+
+                    <section class="apelidos">
+                        <h3>Apelidos:</h3>
+                        <ul>
+                            <li>Spidey</li>
+                            <li>Web-Slinger</li>
+                            <li>Wall-Crawler</li>
+                            <li>The Amazing Spider-Man</li>
+                            <li>Pete</li>
+                            <li>Tiger</li>
+                            <li>Captain Universe</li>
+                            <li>The Spider</li>
+                            <li>Ricochet</li>
+                            <li>Dusk</li>
+                            <li>Prodigy</li>
+                            <li>Hornet</li>
+                            <li>Ben Reilly</li>
+                            <li>Scarlet Spider</li>
+                            <li>Spider-Ben</li>
+                            .
+                        </ul>
+                    </section>
+
+                    <section class="detalhes">
+                        <p>Local de Nascimento:Nova York, Nova York</p>
+                        <p>Primeira Aparição:Amazing Fantasy #15</p>
+                        <p>Editora:Marvel Comics</p>
+                        <p>Alinhamento:Herói</p>
+                    </section>
+                    <section class="powerStatus">
+                        <p>
+                            Nível de Poder
+                        </p>
+                        <div class="ifo-status" id="ifo-status">
+                            <p> combat:<span> 90</span></p>
+                            <p> durability:<span>55</span></p>
+                            <p> intelligence:<span>81</span></p>
+                            <p> power:<span>63</span></p>
+                            <p>speed:<span>29</span></p>
+                            <p>strength:<span>40</span></p>
+                        </div>
+                        <button class="heroi-button" id="heroi-button">
+                            <i class="fas fa-chevron-down seta" id="seta-heroi"></i>
+                        </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="secao-heroi" id="secao-heroi">
+        <h2>Gotham precisa de um herói, não de um salvador.
+        </h2>
+        <div class="heroi">
+            <img src="https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/lg/69-batman.jpg" alt="Batman">
+            <div class="dados">
+                <div class="infos">
+                    <h3>Name: Terry McGinnis</h3>
+
+                    <section class="alter-egos">
+                        <h3>Alter Egos:</h3>
+                        <p>No alter egos found.</p>
+                    </section>
+
+                    <section class="apelidos">
+                        <h3>Apelidos:</h3>
+                        <ul>
+                            <li>Batman Beyond</li>
+                            <li>Future Knight</li>
+                            <li>Terry</li>
+                        </ul>
+                    </section>
+
+                    <section class="detalhes">
+                        <p>Local de Nascimento: Gotham City, 25th Century</p>
+                        <p>Primeira Aparição: Batman Beyond #1</p>
+                        <p>Editora: DC Comics</p>
+                        <p>Alinhamento: Herói</p>
+                    </section>
+                    <section class="powerStatus">
+                        <p>
+                            Nível de Poder
+                        </p>
+                        <div class="ifo-status" id="ifo-status">
+                            <p> combat:<span> 90</span></p>
+                            <p> durability:<span>55</span></p>
+                            <p> intelligence:<span>81</span></p>
+                            <p> power:<span>63</span></p>
+                            <p>speed:<span>29</span></p>
+                            <p>strength:<span>40</span></p>
+                        </div>
+                        <button class="heroi-button" id="heroi-button">
+                            <i class="fas fa-chevron-down seta" id="seta-heroi"></i>
+                        </button>
+
+
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="info-site">
+            <div class="sobre">
+                <div class="info-titulo">
+                    <h3>Sobre</h3>
+                </div>
+                <div class="info-conteudo">
+                    <ul>
+                        <li>
+                            <i class="fas fa-map mapa"></i>
+                            <a href="#">Projeto</a>
+
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="refereces">
+                <div class="info-titulo">
+                    <h3>References</h3>
+                </div>
+                <div class="info-conteudo">
+                    <ul>
+                        <li>
+                            <!-- <img src="/Img/dc-logo1.png" alt=""> -->
+                            <a href="#">DC Databese</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="api">
+                <div class="info-titulo">
+                    <h3>API</h3>
+                </div>
+                <div class="info-conteudo">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-book icone"></i>
+                            <a href="#">Documentation</a>
+
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="social">
+                <div class="info-titulo">
+                    <h3>Social</h3>
+                </div>
+                <div class="info-conteudo">
+                    <ul>
+                        <li>
+                            <i class="fab fa-instagram icone"></i>
+                            <a href="#">Instagram</a>
+
+                        </li>
+                        <li>
+                            <i class="fab fa-github icone"></i>
+                            <a href="#">GitHub</a>
+
+                        </li>
+                        <li>
+                            <i class="fab fa-facebook icone"></i>
+                            <a href="#">Faceboock</a>
+
+                        </li>
+                        <li>
+                            <i class="fab fa-linkedin icone"></i>
+                            <a href="#">Linkedin</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="autor">
+            <p>Copyright @ 2025 Breno Oliveira Assis Reis</p>
+        </div>
+    </footer>
+</body>
+
+</html>
