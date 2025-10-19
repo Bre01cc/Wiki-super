@@ -19,9 +19,9 @@
   gap: 5px;
   position: relative;
 }
-.ifo-status {
-  top: 0;
-  right: 50%;
+.info-status {
+  top: 100%;
+  right: 80%;
   display: none;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.5);
@@ -38,7 +38,7 @@
   font-size: 1.3rem;
   transition: 0.5s ease-in-out;
 }
-.seta{
+.seta {
   transition: all 1s;
   transform: 0;
 }
@@ -81,16 +81,16 @@
   display: flex;
   padding-inline: 2vw;
   padding-block: 2vh;
-  gap: 5vh;
+  gap: 4vh;
   /* justify-content: space-around; */
   font-size: larger;
   flex-direction: column;
 }
 .infos h3 {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 .infos p {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 .apelidos {
   width: 100%;
@@ -99,9 +99,82 @@
   text-decoration: none;
 }
 .apelidos ul {
+  font-size: 1.8rem;
   text-decoration: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 5px;
+}
+@media (max-width: 1080px) {
+  .secao-heroi h2 {
+    font-size: 1.5rem;
+  }
+  .heroi {
+    height: 450px;
+    gap: 2vw;
+  }
+  .infos {
+    gap: 1vh;
+  }
+  .infos p,
+  .infos li {
+    font-size: 1rem;
+  }
+  .infos h3 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 650px) {
+  .secao-heroi {
+    margin-block: 2vh;
+    padding-inline: 20px;
+  }
+  .secao-heroi h2 {
+    margin-left: 2vw;
+    margin-right: 0;
+    font-size: 1.3rem;
+  }
+  .heroi {
+    gap: 1vh;
+    margin-top: 1vh;
+    background-color: #3c6abf;
+    /* margin-inline: 5vw; */
+    border-radius: 20px;
+    justify-content: center;
+    padding-block: 0;
+    padding-top: 1vh;
+    border: none;
+    height: auto;
+    padding-inline: 2vw;
+    align-items: center;
+    padding-inline: 0;
+    flex-direction: column;
+  }
+  .heroi img {
+    width: 40%;
+    border-radius: 10px;
+  }
+  .dados {
+    height: 70%;
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .infos {
+    width: 100%;
+    gap: 1vh;
+  }
+  .infos h3 {
+    font-size: 1.1rem;
+  }
+  .alter-egos {
+    font-size: 0.8rem;
+  }
+  .alter-egos h3 {
+    font-size: 1.1rem;
+  }
+  .apelidos li {
+    font-size: 0.9rem;
+  }
 }

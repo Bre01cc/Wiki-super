@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/Home/Header/header.css">
     <link rel="stylesheet" href="/Home/Header/menu.css">
     <link rel="stylesheet" href="/Home/Footer/footer.css">
-    <script type="module" src="/Home/Conteudo/app.js"></script>
+    <script type="module" src="/Home/Conteudo/app.js" defer></script>
     <script src="./Home/slideshow.js" defer type="module"></script>
     <title>SuperStatus</title>
 </head>
@@ -31,15 +31,16 @@
         </div>
         <div class="pesquisa">
             <div class="input-box">
-                <input type="text" id="caixa-texto">
+                <input type="text" id="pesquisa">
                 <i class="fa-solid fa-magnifying-glass icon"></i>
             </div>
+            <!-- <button class="buttonPesquisa" id="buttonPesquisa">Pesquisar</button> -->
             <!-- <button id="buscar">Buscar</button> -->
         </div>
         <div class="user">
-            <a href="#">
+            <!-- <a href="#">
                 <i class="fas fa-sign-out-alt icone"></i>
-            </a>
+            </a> -->
             <a href="#">
                 <i class="fas fa-user-circle icone"></i>
             </a>
@@ -167,16 +168,19 @@
                         dentro.</p>
                 </div>
             </div>
-            <a href="./pesquisa/pesquisa.html">
-                <button class="info-marvel" id="info-marvel">
 
-                    <i class="fas fa-chevron-down seta" id="info-seta"></i>
-                </button>
-                <button class="Marvel-button">
+            <button class="info-marvel" id="info-marvel">
+
+                <i class="fas fa-chevron-down seta" id="info-seta"></i>
+            </button>
+
+            <button class="Marvel-button">
+                <a href="./pesquisa/pesquisa.html">
                     <p>Heroes</p>
                     <i class="fa-solid fa-arrow-right seta"></i>
-                </button>
-            </a>
+                </a>
+            </button>
+
 
 
         </div>
@@ -238,9 +242,13 @@
             </button>
 
             <button class="DC-button">
-                <p>Heroes</p>
-                <i class="fa-solid fa-arrow-right seta" id="DC-seta"></i>
+                <a href="">
+                    <p>Heroes</p>
+                    <i class="fa-solid fa-arrow-right seta" id="DC-seta"></i>
+                </a>
+
             </button>
+
         </div>
     </div>
     <div class="secao-heroi" id="secao-spider">
@@ -276,7 +284,6 @@
                             <li>Ben Reilly</li>
                             <li>Scarlet Spider</li>
                             <li>Spider-Ben</li>
-                            .
                         </ul>
                     </section>
 
@@ -290,7 +297,7 @@
                         <p>
                             Nível de Poder
                         </p>
-                        <div class="ifo-status" id="ifo-status">
+                        <div class="info-status" id="info-status">
                             <p> combat:<span> 90</span></p>
                             <p> durability:<span>55</span></p>
                             <p> intelligence:<span>81</span></p>
@@ -339,7 +346,7 @@
                         <p>
                             Nível de Poder
                         </p>
-                        <div class="ifo-status" id="ifo-status">
+                        <div class="info-status">
                             <p> combat:<span> 90</span></p>
                             <p> durability:<span>55</span></p>
                             <p> intelligence:<span>81</span></p>
@@ -347,7 +354,7 @@
                             <p>speed:<span>29</span></p>
                             <p>strength:<span>40</span></p>
                         </div>
-                        <button class="heroi-button" id="heroi-button">
+                        <button class="heroi-button">
                             <i class="fas fa-chevron-down seta" id="seta-heroi"></i>
                         </button>
 
@@ -382,8 +389,7 @@
                 <div class="info-conteudo">
                     <ul>
                         <li>
-                            <!-- <img src="/Img/dc-logo1.png" alt=""> -->
-                            <a href="#">DC Databese</a>
+                            <a href="https://dc.fandom.com/wiki/DC_Comics_Database">DC Databese</a>
 
                         </li>
                     </ul>
@@ -397,7 +403,7 @@
                     <ul>
                         <li>
                             <i class="fa-solid fa-book icone"></i>
-                            <a href="#">Documentation</a>
+                            <a href="https://akabab.github.io/superhero-api/api">Documentation</a>
 
                         </li>
                     </ul>
@@ -417,7 +423,7 @@
                         </li>
                         <li>
                             <i class="fab fa-github icone"></i>
-                            <a href="#">GitHub</a>
+                            <a href="https://github.com/Bre01cc/Wiki-super">GitHub</a>
 
                         </li>
                         <li>
@@ -427,7 +433,7 @@
                         </li>
                         <li>
                             <i class="fab fa-linkedin icone"></i>
-                            <a href="#">Linkedin</a>
+                            <a href="https://www.linkedin.com/in/breno-oliveira-assis-reis-203010351/">Linkedin</a>
 
                         </li>
                     </ul>

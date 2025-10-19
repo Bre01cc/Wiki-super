@@ -1,0 +1,51 @@
+main {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-heroi {
+  /* background-color: aqua; */
+  padding-inline: 3vw;
+  padding-block: 5vh;
+  gap: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+  width: 90vw;
+}
+.card {
+  height: 520px;
+  width: 340px;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+.card img {
+  width: 80%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* object-fit: cover; */
+}
+.heroi-info {
+  height: 50%;
+  width: 100%;
+  background-color: #181717;
+  color: white;
+  font-size: 1.8rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card:hover{
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

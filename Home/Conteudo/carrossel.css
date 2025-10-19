@@ -1,40 +1,38 @@
 .carrossel {
-    box-shadow: 2px 2px 10px 2px;
-    border-radius: 10px;
-    background-color: #2847E080;
-    height: 400px;
-    margin-top: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    border-radius: 10px;
+  box-shadow: 2px 2px 10px 2px;
+  border-radius: 10px;
+  background-color: #2847e080;
+  height: 450px;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  border-radius: 10px;
 }
 
 .galeria {
-    /* background-color: aliceblue; */
-    /* box-shadow: 2px 2px 10px 2px;
+  /* background-color: aliceblue; */
+  /* box-shadow: 2px 2px 10px 2px;
     border: 10px; */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .container-items {
-    box-shadow: 2px 2px 10px 2px;
-    background-color: aqua;
-    height: 80%;
-    width: 90%;
-    border-radius: 10px;
-    background-color: #A94E4E;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    overflow: hidden;
-
+  box-shadow: 2px 2px 10px 2px;
+  height: 80%;
+  width: 90%;
+  border-radius: 10px;
+  background-color: #a94e4e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
 }
 /* .container-items:hover>:not(:hover){
     opacity: 1;
@@ -42,47 +40,75 @@
 } */
 
 .item {
-    margin-top: 5vh;
-    height: 80%;
-    width: 90%;
-    transition: 0.6s ease;
-    cursor: pointer;
-    /* display: flex; */
+  height: 80%;
+  width: 90%;
+  transition: 0.6s ease;
+  cursor: pointer;
+  /* display: flex; */
 }
 .item:hover {
-    transform: scale(1.05);
-    opacity: 1;
+  transform: scale(1.05);
+  opacity: 1;
 }
 .item img {
-    box-shadow: 0 5px 5px 5px;
-    border-radius: 5px;
-    width: 150px;
-    height: auto;
+  box-shadow: 0 5px 5px 5px;
+  border-radius: 5px;
+  width: 185px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 /* Isso está aqui para gerar a transição de troca de imagem do item */
 .item:first-child {
-    margin-left: -25%;
+  margin-left: -10%;
 }
 
 .action-button {
-    font: bold 100px sans-serif;
-    color: white;
-    /* z-index: 1; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: auto;
-    /* background-color: aqua; */
-    /* color: #00000000; */
-    /* user-select: none; */
+  font: bold 100px sans-serif;
+  color: white;
+  /* z-index: 1; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: auto;
+  /* background-color: aqua; */
+  /* color: #00000000; */
+  /* user-select: none; */
 }
 
 .action-button:hover {
-    color: red;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 1s;
+  color: red;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 1s;
+}
+@media (max-width: 1080px) {
+  .carrossel {
+    height: 300px;
+  }
+  .item {
+    margin-top: 0;
+  }
+  .item img {
+    width: 150px;
+  }
+}
+@media (max-width: 650px) {
+  .carrossel {
+    height: 200px;
+  }
+  .container-items {
+    height: 90%;
+    width: 90%;
+  }
+  .action-button {
+    width: 10%;
+    height: 10%;
+    font-size: 2.5rem;
+  }
+  .item img {
+    width: 90px;
+  }
 
 }
