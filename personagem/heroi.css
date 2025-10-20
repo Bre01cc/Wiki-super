@@ -1,3 +1,170 @@
-.container-heroi{
+.container-heroi {
+  height: auto;
+  padding-inline: 5vw;
+  width: 100vw;
+  padding-top: 5vh;
+  /* background-color: aqua; */
+}
+.heroi {
+  width: 100%;
+  height: auto;
+}
+.nome {
+  /* background-color: blue; */
+  border-bottom: 4px solid white;
+  /* border-bottom-left-radius: 20px; */
+  /* border-bottom-right-radius: 20px; */
+  height: auto;
+}
+.nome h1 {
+  color: white;
+  font-size: 4rem;
+}
+.info-heroi {
+  margin-top: 5vh;
+  display: flex;
+  /* background-color: aquamarine; */
+  height: auto;
+  padding-block: 3vh;
+  width: 100%;
+}
+.personagem {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  /* background-color: black; */
+  width: 30%;
+}
+.personagem img {
+  border-radius: 10px;
+  width: 85%;
+}
+.status {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding-top: 20px;
+}
+.status h2{
+    color: white;
+    font-size: 2.5rem;
+}
+.status ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.status li {
+  color: white;
+  font-size: 1.8rem;
+}
+.dados {
+  width: 65%;
+  display: grid;
+  gap: 2vh;
+  grid-template-columns: repeat(1fr, 3);
+  height: auto;
+}
+.biografia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  background-color: none;
+  gap: 2vh;
+  border-bottom: 3px solid white;
+  padding-bottom: 20px;
+}
+.aparencia{
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
+}
+.aparencia h3 {
+  font-size: 2rem;
+}
+.aparencia ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.aparencia ul li {
+  font-size: 1.5rem;
+}
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  background-color: none;
+}
+.bio ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.bio ul li {
+  font-size: 1.5rem;
+}
+.bio h3 {
+  font-size: 2rem;
+}
+.bio h3 {
+  font-size: 2rem;
+}
+.alianca{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
 
 }
+.trabalho {
+  color: white;
+  gap: 2vh;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 3px solid white;
+  background-color: none;
+}
+
+.biografia h2 {
+  color: white;
+  font-size: 2.8rem;
+}
+.trabalho h2 {
+  color: white;
+  font-size: 2.8rem;
+}
+.trabalho ul h3{
+font-size: 2rem;
+}
+.trabalho ul li {
+  font-size: 1.5rem;
+}
+.conexao {
+  border-bottom: 3px solid white;
+  color: white;
+  /* background-color: rgb(17, 255, 0); */
+}
+.conexao h2 {
+  color: white;
+  font-size: 2.8rem;
+}
+.connections {
+  padding-block: 20px;
+  /* background-color: aqua; */
+}
+.connections h3 {
+  font-size: 2rem;
+}
+.connections ul li {
+  font-size: 1.5rem;
+}
+.connections ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+/* .afiliacao{
+
+} */

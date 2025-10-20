@@ -1,5 +1,5 @@
 
-import {buscarPersonagens} from '/buscar.js'
+import {buscarPersonagens} from '../../buscar.js'
 
 
 
@@ -18,7 +18,7 @@ const resultadoDaPesquisa = async ({ target }) => {
             //sessionStorage em resumo ela é responsavel por armazenar uma mémoria temporaria que nesse caso será a variável personagem que contém o json
             //JSON.stringify converte um JSON em um texto
             sessionStorage.setItem('personagem',JSON.stringify(personagem))
-            window.location.href = '/pesquisa/pesquisa.html'
+            window.location.href = '../../pesquisa/pesquisa.html'
 
         } else {
             return undefined

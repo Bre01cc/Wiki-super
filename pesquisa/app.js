@@ -7,7 +7,7 @@ const containerImagem = document.getElementById('container-heroi')
 const resultadoDaPesquisa = () => {
     return JSON.parse(sessionStorage.getItem('personagem'))
 
-};
+}
 //childNodes
 //Convertendo um texto JSON em objeto
 
