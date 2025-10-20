@@ -1,6 +1,6 @@
 'use strict'
-import { buscarPersonagens } from '/buscar.js'
-import {buscarPersonagem} from '/buscar.js'
+import { buscarPersonagens } from '../buscar.js'
+import {buscarPersonagem} from '../buscar.js'
 
 const pesquisa = document.getElementById('caixa-texto')
 const containerImagem = document.getElementById('container-heroi')
@@ -17,7 +17,7 @@ const namePersonagem =()=>containerImagem.addEventListener('click', async (event
     let personagem = await buscarPersonagem(card);
     if(personagem.length>0){
         sessionStorage.setItem('personagemSecao',JSON.stringify(personagem))
-        window.location.href ='/personagem/pesquisa.html'
+        window.location.href ='../personagem/personagem.html'
     }
  
     console.log(personagem)
