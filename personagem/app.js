@@ -12,6 +12,9 @@ const criarCardHeroi = (personagem) => {
         const heroi = document.createElement('div')
         heroi.classList.add('heroi')
 
+        let heroiH = document.createElement('h2')
+        heroiH.textContent = 'Informações'
+
         const name = document.createElement('div')
         name.classList.add('nome')
 
@@ -60,6 +63,8 @@ const criarCardHeroi = (personagem) => {
         const dados = document.createElement('div')
         dados.classList.add('dados')
 
+
+
         const biografia = document.createElement('biografia')
         biografia.classList.add('biografia')
         let bioInfo = document.createElement('h2')
@@ -70,16 +75,62 @@ const criarCardHeroi = (personagem) => {
 
         let bioH = document.createElement('h3')
         bioH.textContent = 'Biografia'
-         
+
         let bioUl = document.createElement('ul')
 
         let bioLi1 = document.createElement('li')
+        bioLi1.textContent = "Nome Completo: " + personagem.biography.fullName
 
-        bioLi1 
+        let bioLi2 = document.createElement('li')
+        bioLi2.textContent = "Alter egos: " + personagem.biography.alterEgos
+
+        const alianca = document.createElement('div')
+        alianca.classList.add('alianca')
+
+        let aliancaH = document.createElement('h3')
+
+        aliancaH.textContent = 'Alianças:'
+
+        let aliancaUlA = document.createElement('ul')
+
+        let aliancaUl = document.createElement('ul')
+
+        const aliancaArray = personagem.biography.aliases.forEach((item) => {
+
+            let li = document.createElement('li')
+            li.textContent = item + ","
 
 
 
-        bioUl.append
+
+            aliancaUlA.append(li)
+
+        })
+
+
+        alianca.append(aliancaH, aliancaUlA)
+
+        let bioLi4 = document.createElement('li')
+        bioLi4.textContent = "Primeira aparição: " + personagem.biography.firstAppearance
+
+        let bioLi5 = document.createElement('li')
+        bioLi5.textContent = "Local de nascimento: " + personagem.biography.placeOfBirth
+
+
+        let bioLi6 = document.createElement('li')
+        bioLi6.textContent = "Publicadora: " + personagem.biography.publisher
+
+        aliancaUl.append(bioLi1, bioLi2, bioLi4, bioLi6, bioLi5)
+
+        const criacao = document.createElement('div')
+        criacao.classList.add('criacao')
+        let criacaoH = document.createElement('h3')
+        criacaoH.textContent = "Criação: "
+
+        criacao.append(criacaoH, aliancaUl)
+
+        bioUl.append(alianca, criacao)
+        bio.append(bioUl)
 
 
 
@@ -88,7 +139,7 @@ const criarCardHeroi = (personagem) => {
         aparencia.classList.add('aparencia')
 
         let aparenciaInfo = document.createElement('h3')
-        aparenciaInfo.textContent = 'Aparência'
+        aparenciaInfo.textContent = 'Aparência:'
 
         let ulAparencia = document.createElement('ul')
 
@@ -117,16 +168,46 @@ const criarCardHeroi = (personagem) => {
 
         aparencia.append(aparenciaInfo, ulAparencia)
 
-        biografia.append(bioInfo, aparencia)
-
-        infohHeroi.append(personagemH, biografia)
 
 
+        const trabalho = document.createElement('div')
+        trabalho.classList.add('trabalho')
 
+        const trabalhoH = document.createElement('h2')
+        trabalhoH.textContent = 'Trabalho'
+
+        let trabalhoUl = document.createElement('ul')
+        let trabalhoUlH = document.createElement('h3')
+
+        trabalhoUlH.textContent = 'Base:'
+
+        let trabalhiLi = document.createElement('li')
+        trabalhiLi.textContent = "local:" + personagem.work.base
+        trabalhoUlH.append(trabalhiLi)
+
+
+        trabalhoUl.append(trabalhoUlH)
+
+        let trabalhoUl1H = document.createElement('h3')
+
+        trabalhoUl1H.textContent = 'Ocupação:'
+
+        let trabalhoUl1 = document.createElement('ul')
+
+        let trabalhiLi1 = document.createElement('li')
+        trabalhiLi1.textContent = "local:" + personagem.work.occupation
+
+        trabalhoUl1.append(trabalhoUl1H, trabalhiLi1)
+
+
+        const conexao = document.createElement('div')
+
+
+        trabalho.append(trabalhoH, trabalhoUl, trabalhoUl1)
+        biografia.append(heroiH, aparencia, bio)
+        dados.append(biografia, trabalho)
+        infohHeroi.append(personagemH, dados)
         heroi.append(name, infohHeroi)
-
-
-
         containerHeroi.append(heroi)
     }
 

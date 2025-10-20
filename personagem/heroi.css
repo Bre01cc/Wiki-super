@@ -69,12 +69,11 @@
 .biografia {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   color: white;
   background-color: none;
   gap: 2vh;
   border-bottom: 3px solid white;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .aparencia{
     display: flex;
@@ -101,7 +100,7 @@
 .bio ul {
   display: flex;
   flex-direction: column;
-  gap: 1vh;
+  gap: 2vh;
 }
 .bio ul li {
   font-size: 1.5rem;
@@ -112,11 +111,25 @@
 .bio h3 {
   font-size: 2rem;
 }
-.alianca{
+.alianca ul{
     display: flex;
-    flex-direction: column;
-    gap: 2vh;
-
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1vh;
+}
+.criacao{
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.criacao ul{
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
 }
 .trabalho {
   color: white;
@@ -154,6 +167,7 @@ font-size: 2rem;
   padding-block: 20px;
   /* background-color: aqua; */
 }
+
 .connections h3 {
   font-size: 2rem;
 }
@@ -163,7 +177,7 @@ font-size: 2rem;
 .connections ul{
   display: flex;
   flex-direction: column;
-  gap: 1vh;
+  gap: 2vh;
 }
 /* .afiliacao{
 
