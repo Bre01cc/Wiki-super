@@ -2,36 +2,36 @@ const containerItems = document.getElementById('container-items')
 
 const imagens = [
     {
-        'id': '1', 'url': '../Img/cara.webp',
+        'id': '1', 'url': './Img/Cara.webp',
     },
     {
-        'id': '1', 'url': '../Img/crise.webp',
+        'id': '1', 'url': './Img/crise.webp',
     },
     {
-        'id': '1', 'url': '../Img/hulk.jpg',
+        'id': '1', 'url': './Img/hulk.jpg',
     },
     {
-        'id': '1', 'url': '../Img/iron-man.jpg',
+        'id': '1', 'url': './Img/iron-man.jpg',
     },
     {
-        'id': '1', 'url': '../Img/marvel.jfif',
+        'id': '1', 'url': './Img/marvel.jfif',
     },
     {
-        'id': '1', 'url': '../Img/spider.png',
+        'id': '1', 'url': './Img/spider.png',
     },
     {
-        'id': '1', 'url': '../Img/spider2.jfif',
+        'id': '1', 'url': './Img/spider2.jfif',
     }, {
-        'id': '1', 'url': '../Img/spider3.jfif',
+        'id': '1', 'url': './Img/spider3.jfif',
     },
     {
-        'id': '1', 'url': '../Img/spider4.png',
+        'id': '1', 'url': './Img/spider4.png',
     },
     {
-        'id': '1', 'url': '../Img/spider5.webp',
+        'id': '1', 'url': './Img/spider5.webp',
     },
     {
-        'id': '1', 'url': '../Img/thanos.jfif',
+        'id': '1', 'url': './Img/thanos.jfif',
     }
 ]
 

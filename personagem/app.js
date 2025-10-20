@@ -31,31 +31,95 @@ const criarCardHeroi = (personagem) => {
 
         let ulStatus = document.createElement('ul')
         let liC = document.createElement('li')
-        liC.textContent ="Combate: " +personagem.powerstats.combat
+        liC.textContent = "Combate: " + personagem.powerstats.combat
 
-         let liD = document.createElement('li')
-        liD.textContent ="Combate: " +personagem.powerstats.combat
+        let liD = document.createElement('li')
+        liD.textContent = "Durabilidade: " + personagem.powerstats.durability
 
-         let liI = document.createElement('li')
-        liI.textContent ="Combate: " +personagem.powerstats.combat
+        let liI = document.createElement('li')
+        liI.textContent = "inteligência: " + personagem.powerstats.intelligence
 
-        //  let liC = document.createElement('li')
-        // liC.textContent ="Combate: " +personagem.powerstats.combat
+        let liP = document.createElement('li')
+        liP.textContent = "Poder: " + personagem.powerstats.power
 
-        //  let liC = document.createElement('li')
-        // liC.textContent ="Combate: " +personagem.powerstats.combat
+        let liS = document.createElement('li')
+        liS.textContent = "Velocidade: " + personagem.powerstats.speed
 
-        //  let liC = document.createElement('li')
-        // liC.textContent ="Combate: " +personagem.powerstats.combat
+        let liSt = document.createElement('li')
+        liSt.textContent = "Força: " + personagem.powerstats.strength
 
-        ulStatus.append(liC)
+        ulStatus.append(liC, liD, liI, liP, liS, liSt)
         status.append(ulStatus)
         const img = document.createElement('img')
         img.src = personagem.images.lg
 
         personagemH.append(img, status)
 
-        infohHeroi.append(personagemH)
+
+
+        const dados = document.createElement('div')
+        dados.classList.add('dados')
+
+        const biografia = document.createElement('biografia')
+        biografia.classList.add('biografia')
+        let bioInfo = document.createElement('h2')
+        bioInfo.textContent = 'Informações'
+
+        const bio = document.createElement('div')
+        bio.classList.add('bio')
+
+        let bioH = document.createElement('h3')
+        bioH.textContent = 'Biografia'
+         
+        let bioUl = document.createElement('ul')
+
+        let bioLi1 = document.createElement('li')
+
+        bioLi1 
+
+
+
+        bioUl.append
+
+
+
+
+        const aparencia = document.createElement('div')
+        aparencia.classList.add('aparencia')
+
+        let aparenciaInfo = document.createElement('h3')
+        aparenciaInfo.textContent = 'Aparência'
+
+        let ulAparencia = document.createElement('ul')
+
+        let liG = document.createElement('li')
+        liG.textContent = "Gênero: " + personagem.appearance.gender
+
+        let liEye = document.createElement('li')
+        liEye.textContent = "Cor dos olhos: " + personagem.appearance.eyeColor
+
+        let liHair = document.createElement('li')
+        liHair.textContent = "Cor dos cabelos: " + personagem.appearance.hairColor
+
+        let liHei = document.createElement('li')
+        liHei.textContent = "Altura: " + personagem.appearance.height
+
+        let liRace = document.createElement('li')
+        liRace.textContent = "Raça: " + personagem.appearance.race
+
+        let liW = document.createElement('li')
+        liW.textContent = "Peso: " + personagem.appearance.weight
+
+
+        ulAparencia.append(liG, liEye, liHair, liHei, liRace, liW)
+
+
+
+        aparencia.append(aparenciaInfo, ulAparencia)
+
+        biografia.append(bioInfo, aparencia)
+
+        infohHeroi.append(personagemH, biografia)
 
 
 
