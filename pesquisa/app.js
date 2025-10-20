@@ -17,7 +17,7 @@ const namePersonagem =()=>containerImagem.addEventListener('click', async (event
     let personagem = await buscarPersonagem(card);
     if(personagem.length>0){
         sessionStorage.setItem('personagemSecao',JSON.stringify(personagem))
-        window.location.href ='../personagem/personagem.html'
+        window.location.href ='./personagem/personagem.html'
     }
  
     console.log(personagem)
