@@ -19,8 +19,6 @@ const namePersonagem =()=>containerImagem.addEventListener('click', async (event
         sessionStorage.setItem('personagemSecao',JSON.stringify(personagem))
         window.location.href ='../personagem/personagem.html'
     }
- 
-    console.log(personagem)
 })
 namePersonagem()
 

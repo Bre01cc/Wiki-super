@@ -1,3 +1,4 @@
+'use strict'
 const containerItems = document.getElementById('container-items')
 
 const imagens = [

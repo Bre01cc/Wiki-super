@@ -1,4 +1,5 @@
-const trazerPersonagens = async () => {
+'use strict'
+ export const trazerPersonagens = async () => {
 
     let url = `https://akabab.github.io/superhero-api/api/all.json`
     let response = await fetch(url)

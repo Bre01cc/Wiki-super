@@ -10,11 +10,19 @@
   height: auto;
 }
 .nome {
-  /* background-color: blue; */
-  border-bottom: 4px solid white;
-  /* border-bottom-left-radius: 20px; */
-  /* border-bottom-right-radius: 20px; */
+ position: relative;
   height: auto;
+  padding-bottom: 10px;
+}
+.nome::after {
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation:borda 4s ease forwards;
 }
 .nome h1 {
   color: white;
@@ -36,14 +44,21 @@
   width: 30%;
 }
 .personagem img {
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   width: 85%;
 }
 .status {
-  width: 100%;
+  width: 85%;
   display: flex;
   flex-direction: column;
+  padding-inline: 10px;
+  padding-block: 30px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   gap: 2vh;
+  background-color:#3C6ABF;
+
   padding-top: 20px;
 }
 .status h2{
@@ -52,12 +67,32 @@
 }
 .status ul{
     display: flex;
+    padding-right: 100px;
     flex-direction: column;
     gap: 1vh;
 }
 .status li {
+  position: relative;
   color: white;
   font-size: 1.8rem;
+}
+.status li::after {
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation:borda 4s ease forwards;
+}
+@keyframes borda{
+  0% {
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
 }
 .dados {
   width: 65%;
@@ -72,8 +107,18 @@
   color: white;
   background-color: none;
   gap: 2vh;
-  border-bottom: 3px solid white;
   padding-bottom: 10px;
+  position: relative;
+}
+.biografia::after {
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation:borda 4s ease forwards;
 }
 .aparencia{
     display: flex;
@@ -136,9 +181,21 @@
   gap: 2vh;
   display: flex;
   flex-direction: column;
-  border-bottom: 3px solid white;
   background-color: none;
+  padding-bottom: 15px;
+  position: relative;
 }
+.trabalho::after {
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation:borda 4s ease forwards;
+}
+
 
 .biografia h2 {
   color: white;
@@ -148,16 +205,31 @@
   color: white;
   font-size: 2.8rem;
 }
+.trabalho ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
 .trabalho ul h3{
-font-size: 2rem;
+font-size: 1.8rem;
 }
 .trabalho ul li {
   font-size: 1.5rem;
 }
 .conexao {
-  border-bottom: 3px solid white;
+  position: relative;
   color: white;
   /* background-color: rgb(17, 255, 0); */
+}
+.conexao::after {
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation:borda 4s ease forwards;
 }
 .conexao h2 {
   color: white;

@@ -1,0 +1,159 @@
+main {
+  width: 100%;
+  height: auto;
+  /* background-color: aqua; */
+  padding-top: 10vh;
+}
+
+.personagensFundo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+}
+.fundoC {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+}
+.characters {
+  height: 80%;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #000000;
+}
+.characters h2 {
+  font-size: 8.5rem;
+  color: white;
+}
+.containerHeroi {
+  /* background-color: aqua; */
+  width: 100%;
+  height: auto;
+  padding-block: 5vh;
+  padding-inline: 10vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.caixaHeroi {
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  gap: 2vw;
+  padding-block: 10vh;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.8);
+}
+.card {
+  height: 400px;
+  width: 300px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+.card:hover{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.card-fundo {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+}
+.card-fundo img {
+  border-radius: 10px;
+  width: 75%;
+}
+.card-info {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.8rem;
+}
+.sei-la {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 1vh;
+}
+.escolha {
+  height: 70px;
+  width: 280px;
+  border-radius: 10px;
+  border: none;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.escolha:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 200, 255, 0.5);
+}
+.escolha h3 {
+  font-size: 1.5rem;
+}
+.escolha .icone-seta {
+  color: white;
+  font-size: 1.5rem;
+}
+.menu {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 4%;
+  border-radius: 10px;
+  height: 200px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+  width: 280px;
+  position: absolute;
+}
+.heroi,
+.vilao {
+  height: auto;
+  width: 100%;
+  color: white;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  /* justify-content: center; */
+  border: none;
+  background-color: transparent;
+}
+.vilao p {
+  border-bottom: 3px solid white;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  transition: 2s;
+}
+.heroi p {
+  border-bottom: 3px solid white;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  transition: 2s;}
+.menu p:hover {
+  color: red;
+}

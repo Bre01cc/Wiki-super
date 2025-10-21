@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,13 +15,16 @@
     <link rel="stylesheet" href="./Header/menu.css">
     <link rel="stylesheet" href="./Footer/footer.css">
     <link rel="stylesheet" href="./Conteudo/carrossel.css">
+    <link rel="stylesheet" href="./Conteudo/marvel.css">
     <script type="module" src="./slideshow.js"></script>
+    <script type="module" src="./marvel.js" defer></script>
     <title>Marvel</title>
 </head>
+
 <body>
-      <header>
+    <header>
         <div class="logo">
-            <img src="/Img/logo.png" alt="">
+            <img src="../Img/Logo-marvel-header.png" alt="">
             <h1>SuperStatus</h1>
         </div>
         <div class="pesquisa">
@@ -99,7 +103,45 @@
             <div class="action-button" id="next">&raquo</div>
         </div>
     </div>
-      <footer>
+    <main>
+        <div class="personagensFundo">
+            <div class="fundoC">
+                <div class="characters">
+                    <h2>Characters</h2>
+                </div>
+
+            </div>
+        </div>
+        <div class="containerHeroi">
+            <div class="sei-la">
+                <button class="escolha" id="escolha">
+                    <h3>Herói</h3>
+                    <i class="fas fa-chevron-down icone-seta"></i>
+                </button>
+                <div class="menu" id="menu">
+                    <button class="heroi" id="heroi">
+                        <p>Herói</p>
+                    </button>
+                    <button class="vilao" id="vilao">
+                        <p>Vilão</p>
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="caixaHeroi" id="caixa-Heroi">
+                <!-- <div class="card">
+                   <div class="card-fundo">
+                    <img src="../Img/620-spider-man.jpg" alt="">
+                   </div>
+                   <div class="card-info">
+                    <p>620-spider-man</p>
+                   </div> -->
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
         <div class="info-site">
             <div class="sobre">
                 <div class="info-titulo">
@@ -180,4 +222,5 @@
         </div>
     </footer>
 </body>
+
 </html>
