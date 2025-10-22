@@ -23,6 +23,7 @@ const resultadoDaPesquisa = async ({ target }) => {
     }
 }
 
+
 // AddEventListener é capaz de devolver uma série de informações sobre o item clicado através de um objeto chamado event , 
 document.getElementById('caixa-texto').addEventListener('focusout', resultadoDaPesquisa)
 

@@ -1,6 +1,8 @@
 
 'use strict'
 import { trazerPersonagens } from '../buscar.js'
+
+import {buscarPersonagem} from '../buscar.js'
 const caixaHeroi = document.getElementById('caixa-Heroi')
 
 const marvelPersonagens = async (categoria) => {
@@ -54,9 +56,20 @@ const carregarCards = async (status) => {
 
 }
 
+const namePersonagem =()=>caixaHeroi.addEventListener('click', async (event)=>{
+    //Pega o elemento que foi alvo do click e busca o ansestral que corresponda a classe card
+    const card = event.target.closest('.card').textContent
+    let personagem = await buscarPersonagem(card);
+    if(personagem.length>0){
+        sessionStorage.setItem('personagemSecao',JSON.stringify(personagem))
+        window.location.href ='../personagem/personagem.html'
+    }
+})
+namePersonagem()
+
 const menu = document.getElementById('menu')
 
-const alterarButton = async (categoriaHorV,nomeDiv) => {
+const alterarButton = async (categoriaHorV, nomeDiv) => {
 
     let nome = escolha.querySelector('h3')
     nome.textContent = nomeDiv
@@ -64,8 +77,8 @@ const alterarButton = async (categoriaHorV,nomeDiv) => {
     await carregarCards(categoriaHorV)
 }
 
-document.getElementById('vilao').addEventListener('click', async () => alterarButton('bad','Vilão'))
-document.getElementById('heroi').addEventListener('click', async () => alterarButton('good','Herói'))
+document.getElementById('vilao').addEventListener('click', async () => alterarButton('bad', 'Vilão'))
+document.getElementById('heroi').addEventListener('click', async () => alterarButton('good', 'Herói'))
 const chamarMenu = (button) => {
 
     const seta = button.querySelector('.icone-seta')
