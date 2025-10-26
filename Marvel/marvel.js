@@ -6,6 +6,11 @@ import { buscarPersonagens } from '../buscar.js'
 import {buscarPersonagem} from '../buscar.js'
 const caixaHeroi = document.getElementById('caixa-Heroi')
 
+
+
+
+ 
+
 //Retorna todos os personagens cuja  a publicadora seja a marvel
 const marvelPersonagens = async (categoria) => {
     const personagens = await trazerPersonagens();
@@ -19,7 +24,6 @@ const marvelPersonagens = async (categoria) => {
 
     return marvelHeroi
 }
-
 //Com o retorno dos personagens da marvel cria cards é adiciona em um container
 const criarCard = (personagens) => {
     const card = document.createElement('div')
@@ -132,7 +136,6 @@ const resultadoDaPesquisa = async (pesquisa) => {
 
 //AddEventListener é capaz de devolver uma série de informações sobre o item clicado através de um objeto chamado event , 
 const pesquisa = document.getElementById('pesquisa')
-
 
 
 const mapear = (event) => {

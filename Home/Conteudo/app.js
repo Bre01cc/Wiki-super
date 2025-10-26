@@ -1,8 +1,6 @@
 
 import { buscarPersonagens } from '../../buscar.js'
 
-
-
 //Responsavel por tarazer todo JSON da api de super herois
 
 

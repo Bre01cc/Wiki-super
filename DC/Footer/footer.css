@@ -122,6 +122,7 @@ footer {
 .autor p {
   color: white;
   transition: all 1s;
+  font-size: 1rem;
 }
 .autor p:hover {
   color: red;
