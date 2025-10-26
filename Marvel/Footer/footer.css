@@ -26,25 +26,16 @@ footer {
   height: 100%;
 }
 .sobre .info-conteudo {
-  border-left: 3px solid black;
-  animation: trocaBordaSobre 5s ease forwards;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
 }
-@keyframes trocaBordaSobre {
-  0% {
-    border-left: 3px solid black;
-    border-right: 3px solid black;
-  }
-  100% {
-    border-left: 3px solid white;
-    border-right: 3px solid white;
-  }}
 .info-conteudo .icone {
   font-size: 2rem;
   color: white;
 }
 
 .info-conteudo {
-  border-right: 3px solid black;
+  border-right: 3px solid white;
   /* grid-row: 3/4; */
   height: 80%;
   /* background-color: rgb(37, 164, 105); */
@@ -55,13 +46,6 @@ footer {
   padding-top: 20px;
   animation: trocaBorda 5s ease forwards;
 }
-@keyframes trocaBorda {
-  0% {
-    border-right: 3px solid black;
-  }
-  100% {
-    border-right: 3px solid white;
-  }}
 .info-conteudo li {
   padding-left: 10%;
   display: flex;
@@ -169,7 +153,7 @@ footer {
     height: auto;
     gap: 2vh;
     padding-block: 2vh;
-      margin-top: 5vh;
+    margin-top: 5vh;
   }
   .info-titulo h3 {
     font-size: 1.3rem;
@@ -189,11 +173,12 @@ footer {
   }
   .sobre .info-conteudo {
     border-left: 0;
+    border-right: 0;
   }
-  .autor{
+  .autor {
     padding-block: 10px;
   }
-  .autor p{
+  .autor p {
     font-size: 0.9rem;
   }
 }

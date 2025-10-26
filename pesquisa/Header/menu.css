@@ -57,3 +57,14 @@ nav li a:hover::after {
   margin-top: 10px;
   text-align: center;
 }
+@media (max-width: 650px) {
+  nav{
+    height: 60px;
+  }
+nav li a{
+  font-size: 0.8rem;
+}
+.seta{
+  font-size: 0.7rem;
+}
+}

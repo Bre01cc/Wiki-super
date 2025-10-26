@@ -46,6 +46,22 @@ main {
   justify-content: center;
   align-items: center;
 }
-.card:hover{
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 1080px) {
+  .container-heroi {
+    justify-content: center;
+    gap: 20px;
+  }
+  .card {
+    height: 400px;
+    width: 240px;
+  }
+}
+@media (max-width: 650px) {
+  .card {
+    height: 300px;
+    width: 200px;
+  }
 }

@@ -2,7 +2,7 @@
 import { buscarPersonagens } from '../buscar.js'
 import {buscarPersonagem} from '../buscar.js'
 
-const pesquisa = document.getElementById('caixa-texto')
+const pesquisa = document.getElementById('pesquisa')
 const containerImagem = document.getElementById('container-heroi')
 const resultadoDaPesquisa = () => {
     return JSON.parse(sessionStorage.getItem('personagem'))
@@ -22,9 +22,9 @@ const namePersonagem =()=>containerImagem.addEventListener('click', async (event
 })
 namePersonagem()
 
-const pesquisaPersonagem = async ({ target }) => {
+const pesquisaPersonagem = async (perquisa) => {
 
-    let nome = target.value
+    let nome = perquisa.value
     if (nome != null && nome != undefined && nome != '') {
         let personagem = await buscarPersonagens(nome)
         if (personagem) {
@@ -39,9 +39,16 @@ const pesquisaPersonagem = async ({ target }) => {
         return false
     }
 }
-document.getElementById('caixa-texto').addEventListener('focusout', pesquisaPersonagem)
 
 
+
+
+const mapear = (event) => {
+    if (event.key == 'Enter') {
+        pesquisaPersonagem(pesquisa)
+    }
+}
+document.addEventListener('keydown', mapear)
 
 const card = (personagem) => {
     const card = document.createElement('div')

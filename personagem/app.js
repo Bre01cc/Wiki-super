@@ -4,9 +4,9 @@ const resultadoCard = () => {
 
 }
 
-const resultadoDaPesquisa = async ({ target }) => {
+const resultadoDaPesquisa = async (perquisa) => {
 
-    let nome = target.value
+    let nome = perquisa.value
     if (nome != null && nome != undefined && nome != '') {
         let personagem = await buscarPersonagens(nome)
         if (personagem) {
@@ -23,9 +23,14 @@ const resultadoDaPesquisa = async ({ target }) => {
     }
 }
 
-
+const pesquisa = document.getElementById('pesquisa')
 // AddEventListener é capaz de devolver uma série de informações sobre o item clicado através de um objeto chamado event , 
-document.getElementById('caixa-texto').addEventListener('focusout', resultadoDaPesquisa)
+const mapear = (event) => {
+    if (event.key == 'Enter') {
+        resultadoDaPesquisa(pesquisa)
+    }
+}
+document.addEventListener('keydown', mapear)
 
 const containerHeroi = document.getElementById('container-heroi')
 const criarCardHeroi = (personagem) => {
@@ -270,3 +275,5 @@ function carregarCards() {
 
 }
 carregarCards()
+
+

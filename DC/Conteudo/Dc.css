@@ -19,7 +19,7 @@ main {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background-color: white;
+  background-color: #25588B;
 }
 .characters {
   height: 80%;
@@ -28,7 +28,7 @@ main {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background-color: #000000;
+  background-color:#2F7BDE;
 }
 .characters h2 {
   font-size: 8.5rem;
@@ -59,7 +59,7 @@ main {
 .card {
   height: 400px;
   width: 300px;
-  background-color: rgb(0, 0, 0);
+  background-color: #2A64C1;
   border-radius: 10px;
 }
 .card:hover {
@@ -73,7 +73,7 @@ main {
   align-items: center;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: white;
+  background-color:#000000;
 }
 .card-fundo img {
   border-radius: 10px;
@@ -99,7 +99,7 @@ main {
   width: 280px;
   border-radius: 10px;
   border: none;
-  background-color: #000000;
+  background-color: #104172;
   color: white;
   display: flex;
   justify-content: center;

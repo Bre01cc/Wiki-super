@@ -110,6 +110,9 @@
   .secao-heroi h2 {
     font-size: 1.5rem;
   }
+  .info-status{
+    right: 50%;
+  }
   .heroi {
     height: 450px;
     gap: 2vw;

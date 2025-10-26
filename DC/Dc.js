@@ -7,11 +7,11 @@ import {buscarPersonagem} from '../buscar.js'
 const caixaHeroi = document.getElementById('caixa-Heroi')
 
 //Retorna todos os personagens cuja  a publicadora seja a marvel
-const marvelPersonagens = async (categoria) => {
+const dcPersonagens = async (categoria) => {
     const personagens = await trazerPersonagens();
     const marvelHeroi = [];
     personagens.forEach(heroi => {
-        if (heroi.biography.publisher == 'Marvel Comics' && heroi.biography.alignment == String(categoria)) {
+        if (heroi.biography.publisher == 'DC Comics' && heroi.biography.alignment == String(categoria)) {
 
             marvelHeroi.push(heroi)
         }
@@ -49,10 +49,10 @@ const criarCard = (personagens) => {
 //Carrega os cards na tela
 const carregarCards = async (status) => {
     if (!status) {
-        const marvelPersonagensC = await marvelPersonagens('good');
+        const marvelPersonagensC = await dcPersonagens('good');
         marvelPersonagensC.forEach(criarCard)
     } else {
-        const marvelPersonagensC = await marvelPersonagens(status);
+        const marvelPersonagensC = await dcPersonagens(status);
         marvelPersonagensC.forEach(criarCard)
     }
 
@@ -130,11 +130,7 @@ const resultadoDaPesquisa = async (pesquisa) => {
     }
 }
 
-//AddEventListener é capaz de devolver uma série de informações sobre o item clicado através de um objeto chamado event , 
 const pesquisa = document.getElementById('pesquisa')
-
-
-
 const mapear = (event) => {
     if (event.key == 'Enter') {
 

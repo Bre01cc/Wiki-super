@@ -1,17 +1,26 @@
 nav {
   display: flex;
   flex-direction: row;
-  height: 70px;
+  height: 80px;
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
   background-color: #245e8a;
+  animation: trocaMenu 5s ease forwards;
 }
+@keyframes trocaMenu {
+  0% {
+   background-color: #245e8a;
+  }
+  100% {
+    background-color:#1F437D;
+  }}
+
 nav li {
   display: inline;
 }
 nav li a {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: white;
   text-decoration: none;
   position: relative;
@@ -56,4 +65,15 @@ nav li a:hover::after {
 .dropdown-menu a {
   margin-top: 10px;
   text-align: center;
+}
+@media (max-width: 650px) {
+  nav{
+    height: 60px;
+  }
+nav li a{
+  font-size: 0.8rem;
+}
+.seta{
+  font-size: 0.7rem;
+}
 }

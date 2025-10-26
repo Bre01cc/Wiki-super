@@ -113,6 +113,7 @@ footer {
 .autor p {
   color: white;
   transition: all 1s;
+  font-size: 1.5rem;
 }
 .autor p:hover {
   color: red;

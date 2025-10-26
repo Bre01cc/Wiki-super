@@ -105,7 +105,7 @@ header {
 
 .user .icone {
   color: #0c2063;
-  font-size: 2rem;
+  font-size: 3rem;
   animation: trocaIcone 5s ease forwards;
 }
 @keyframes trocaIcone {

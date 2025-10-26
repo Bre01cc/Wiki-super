@@ -9,20 +9,20 @@ import { buscarPersonagens } from '../../buscar.js'
 //Responsavel por buscar baseado na busca do usuário heroi especifico dentro do JSON
 
 //Responsavel por redirecionar o usuario com base na pesquisa em uma pesquisa valida
-const resultadoDaPesquisa = async (perquisa) => {
+const resultadoDaPesquisa = async ({ target }) => {
 
-    let nome = perquisa.value
+    let nome = target.value
     if (nome != null && nome != undefined && nome != '') {
         let personagem = await buscarPersonagens(nome)
         if (personagem) {
             //sessionStorage em resumo ela é responsavel por armazenar uma mémoria temporaria que nesse caso será a variável personagem que contém o json
             //JSON.stringify converte um JSON em um texto
             sessionStorage.setItem('personagem', JSON.stringify(personagem))
-
+            
             window.location.href = './pesquisa/pesquisa.html'
-
+           
         } else {
-            return false
+            return undefined
         }
     } else {
         return false
@@ -30,8 +30,7 @@ const resultadoDaPesquisa = async (perquisa) => {
 }
 
 //AddEventListener é capaz de devolver uma série de informações sobre o item clicado através de um objeto chamado event , 
-const pesquisa = document.getElementById('pesquisa')
-// document.getElementById('pesquisa').addEventListener('focusout', resultadoDaPesquisa)
+document.getElementById('pesquisa').addEventListener('focusout', resultadoDaPesquisa)
 
 const alterarDisplay = (editora) => {
     if (editora == "Marvel") {
@@ -104,13 +103,3 @@ const powerStatus = () => {
 }
 powerStatus()
 
-
-
-const mapear = (event) => {
-    if (event.key == 'Enter') {
-        console.log(pesquisa.value)
-
-        resultadoDaPesquisa(pesquisa)
-    }
-}
-document.addEventListener('keydown', mapear)

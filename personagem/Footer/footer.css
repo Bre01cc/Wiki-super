@@ -113,10 +113,12 @@ footer {
 .autor p {
   color: white;
   transition: all 1s;
+  font-size: 1.5rem;
 }
 .autor p:hover {
   color: red;
 }
+
 @media (max-width: 1020px) {
   footer {
     height: 25vh;
@@ -135,5 +137,38 @@ footer {
   }
   .info-conteudo .icone {
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 650px) {
+  footer {
+    height: auto;
+    gap: 2vh;
+    padding-block: 2vh;
+      margin-top: 5vh;
+  }
+  .info-titulo h3 {
+    font-size: 1.3rem;
+  }
+  .info-conteudo li a {
+    font-size: 0.9rem;
+  }
+  .info-site {
+    grid-template-columns: 1fr;
+  }
+  .info-conteudo {
+    /* margin-top: 2vh; */
+    height: auto;
+    padding-bottom: 2vh;
+    border-bottom: 3px solid white;
+    border-right: 0;
+  }
+  .sobre .info-conteudo {
+    border-left: 0;
+  }
+  .autor{
+    padding-block: 10px;
+  }
+  .autor p{
+    font-size: 1rem;
   }
 }

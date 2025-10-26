@@ -3,11 +3,15 @@
   margin: 0;
   box-sizing: border-box;
 }
-a{
+a {
   text-decoration: none;
 }
 ul {
   list-style: none;
+}
+html,
+body {
+  overflow-x: hidden;
 }
 body {
   background-color: #5fabf3;
@@ -15,7 +19,16 @@ body {
   flex-direction: column;
   width: 100vw;
   justify-content: center;
-  overflow-x: hidden;
   align-items: center;
   font-family: "Inter", sans-serif;
+  animation: troca 5s ease forwards;
+}
+
+@keyframes troca {
+  0% {
+    background-color: #5fabf3;
+  }
+  100% {
+    background-color: #3B4FD1;
+  }
 }
